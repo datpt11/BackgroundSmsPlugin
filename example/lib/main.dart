@@ -45,7 +45,7 @@ class _MyAppState extends State<MyApp> {
           onPressed: () async {
             if (await _isPermissionGranted()) {
               if (await _supportCustomSim)
-                _sendMessage("09xxxxxxxxx", "Hello", simSlot: 1);
+                _sendMessage("0966882669", "Hello", simSlot: 1);
               else
                 _sendMessage("09xxxxxxxxx", "Hello");
             } else
