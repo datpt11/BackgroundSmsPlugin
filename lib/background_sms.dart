@@ -8,7 +8,9 @@ class BackgroundSms {
   static const MethodChannel _channel = const MethodChannel('background_sms');
 
   static Future<SmsStatus> sendMessage(
-      {String phoneNumber, String message, int simSlot}) async {
+      {required String phoneNumber,
+      required String message,
+      required int simSlot}) async {
     try {
       String result = await _channel.invokeMethod('sendSms', <String, dynamic>{
         "phone": phoneNumber,
